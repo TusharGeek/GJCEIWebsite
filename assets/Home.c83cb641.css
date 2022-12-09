@@ -1,1 +1,0 @@
-.cards{max-width:1200px;margin:auto;grid-gap:5rem;display:flex;justify-content:center;align-items:center;flex-wrap:wrap}.LinkageImg{height:110px}@media (min-width: 600px){.cards{grid-template-columns:repeat(2,1fr)}}@media (min-width: 900px){.cards{grid-template-columns:repeat(3,1fr)}}
