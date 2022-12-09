@@ -34,7 +34,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         },
       }}
     >
-      <BrowserRouter>
+      <BrowserRouter basename="/GJCEIWebsite">
         <App />
       </BrowserRouter>
     </MantineProvider>
