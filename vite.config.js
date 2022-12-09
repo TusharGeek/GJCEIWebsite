@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [
     react(),
     legacy({
-      targets: ["defaults", "not IE 11"],
+      targets: ["last 5 years", "not IE 11"],
     }),
   ],
   base: "/GJCEIWebsite/",
