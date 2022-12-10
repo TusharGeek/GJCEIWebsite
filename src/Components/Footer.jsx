@@ -1,12 +1,15 @@
-import "./Footer.css";
-import { Text } from "@mantine/core";
+import { Box, Text, UnstyledButton } from "@mantine/core";
+import { useNavigate } from "react-router-dom";
 import {
   IconBrandFacebook,
   IconBrandTwitter,
   IconBrandInstagram,
 } from "@tabler/icons";
 import Logo from ".././assets/Logo/logo.png";
+import "./Footer.css";
+
 const Footer = () => {
+  const navigate = useNavigate();
   return (
     <div style={{ marginTop: "70px" }}>
       <footer>
@@ -31,39 +34,42 @@ const Footer = () => {
             </a>
           </div>
 
-          <div class="row">
+          <Box class="row">
             <ul>
               <li>
-                <a href="/AboutUs">Mandate</a>
+                <UnstyledButton
+                  sx={{ color: "#fff" }}
+                  onClick={() => navigate("/AboutUs")}
+                >
+                  Mandate
+                </UnstyledButton>
               </li>
               <li>
-                <a href="/NewsEvents">News & Events</a>
+                <UnstyledButton
+                  sx={{ color: "#fff" }}
+                  onClick={() => navigate("/NewsEvents")}
+                >
+                  News & Events
+                </UnstyledButton>
               </li>
               <li>
-                <a href="/Activities">Activities</a>
+                <UnstyledButton
+                  sx={{ color: "#fff" }}
+                  onClick={() => navigate("/Activities")}
+                >
+                  Activities
+                </UnstyledButton>
               </li>
               <li>
-                <a href="/ContactUs">Contact Us</a>
+                <UnstyledButton
+                  sx={{ color: "#fff" }}
+                  onClick={() => navigate("/ContactUs")}
+                >
+                  Contact Us
+                </UnstyledButton>
               </li>
             </ul>
-          </div>
-
-          {/* <section class="map">
-      <div class="mapouter">
-        <div class="gmap_canvas">
-          <iframe
-            height="250"
-            width="90%"
-            id="gmap_canvas"
-            src="https://maps.google.com/maps?q=Amritsar&t=&z=15&ie=UTF8&iwloc=&output=embed"
-            frameborder="0"
-            scrolling="no"
-            marginheight="0"
-            marginwidth="0"
-          ></iframe>
-        </div>
-      </div>
-    </section> */}
+          </Box>
 
           <div class="row">GJCEI Copyright © 2022</div>
         </div>
