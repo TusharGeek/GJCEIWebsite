@@ -46,7 +46,7 @@ const Carousel = ({ images = [] }) => {
                   objectFit: "cover",
                   blockSize: 300,
                   [theme.fn.largerThan("md")]: {
-                    blockSize: 500,
+                    blockSize: 600,
                   },
                 })}
                 alt=""

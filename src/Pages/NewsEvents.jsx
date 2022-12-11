@@ -4,17 +4,19 @@ import { Box, Title, Paper, Text, Container, Flex, Image } from "@mantine/core";
 import one from "../assets/NewsEventsImg/NewsEventImg1.jpeg";
 import two from "../assets/NewsEventsImg/NewsEventImg2.jpeg";
 import three from "../assets/NewsEventsImg/NewsEventImg3.jpeg";
+import four from "../assets/NewsEventsImg/NewsEventsImg4.jpeg";
 
-// Footer images
+// Poster images
 import event1 from "../assets/GJCEI Events/eventIMG1.png";
 import event2 from "../assets/GJCEI Events/eventIMG2.png";
 import event3 from "../assets/GJCEI Events/eventIMG3.png";
-
+import event4 from "../assets/GJCEI Events/eventimg4.png";
+import event5 from "../assets/GJCEI Events/eventimg5.png";
 import Carousel from "../Components/Carousel";
 import Footer from "../Components/Footer";
 
 const NewsEvents = () => {
-  const data = [one, two, three];
+  const data = [one, two, three,four];
 
   return (
     <Box>
@@ -99,10 +101,13 @@ const NewsEvents = () => {
               <Image src={event1} />
               <Image src={event2} />
               <Image src={event3} />
+              <Image src={event4} />
+              <Image src={event5} />
             </Flex>
           </Box>
         </Box>
       </Container>
+      <Footer/>
     </Box>
   );
 };
